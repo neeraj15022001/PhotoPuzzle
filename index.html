@@ -27,31 +27,37 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="./css/particle.css" />
   </head>
-  <div class="container-fluid position-absolute bottom-0 top-0 start-0 end-0 bg-warning d-flex align-items-center justify-content-center" style="z-index: 10000;">
+  <!-- <div class="container-fluid position-absolute bottom-0 top-0 start-0 end-0 bg-warning d-flex align-items-center justify-content-center" style="z-index: 10000;">
     <p class="display-1 text-capitalize fw-bold">This site is under contruction</p>
-  </div>
+  </div> -->
   <body oncontextmenu="return false">
     <div class="bg-transparent position-absolute" id="content">
-      <div class="row gx-2 dragContainer bg-danger">
+      <!-- <div class="row gx-2 dragContainer bg-danger">
         <div class="col py-1 draggable" draggable="true">
           <img src="./images/row-1-col-1.jpg" alt="row-1-col-1" />
         </div>
         <div class="col py-1 draggable" draggable="true">
-          <img src="./images/row-1-col-2.jpg" alt="row-1-col-2" />
+          <img src="./images/row-2-col-2.jpg" alt="row-1-col-2" />
         </div>
         <div class="col py-1 draggable" draggable="true">
-          <img src="./images/row-1-col-3.jpg" alt="row-1-col-3" />
+          <img src="./images/row-3-col-3.jpg" alt="row-1-col-3" />
         </div>
       </div>
       <div class="row gx-2 dragContainer bg-success gy-1">
         <div class="col py-1 draggable" draggable="true">
-          <img src="./images/row-2-col-1.jpg" alt="row-2-col-1" />
+          <img src="./images/row-3-col-1.jpg" alt="row-2-col-1" />
         </div>
         <div class="col py-1 draggable" draggable="true">
-          <img src="./images/row-2-col-2.jpg" alt="row-2-col-2" />
+          <img src="./images/row-1-col-2.jpg" alt="row-2-col-2" />
         </div>
         <div class="col py-1 draggable" draggable="true">
           <img src="./images/row-2-col-3.jpg" alt="row-2-col-3" />
@@ -60,24 +66,53 @@
 
       <div class="row gx-2 dragContainer bg-warning gy-1">
         <div class="col py-1 draggable" draggable="true">
-          <img src="./images/row-3-col-1.jpg" alt="row-3-col-1" />
+          <img src="./images/row-2-col-1.jpg" alt="row-3-col-1" />
         </div>
         <div class="col py-1 draggable" draggable="true">
           <img src="./images/row-3-col-2.jpg" alt="row-3-col-2" />
         </div>
         <div class="col py-1 draggable" draggable="true">
-          <img src="./images/row-3-col-3.jpg" alt="row-3-col-3" />
+          <img src="./images/row-1-col-3.jpg" alt="row-3-col-3" />
         </div>
-      </div>
+      </div> -->
+      <ul id="sortable" class="grid-container" style="background-color: #1b1c1e">
+        <li class="ui-state-default grid-item">
+          <img src="./images/row-1-col-1.jpg" alt="row-1-col-1" />
+        </li>
+        <li class="ui-state-default grid-item">
+          <img src="./images/row-2-col-1.jpg" alt="row-1-col-1" />
+        </li>
+        <li class="ui-state-default grid-item">
+          <img src="./images/row-3-col-1.jpg" alt="row-1-col-1" />
+        </li>
+        <li class="ui-state-default grid-item">
+          <img src="./images/row-1-col-2.jpg" alt="row-1-col-1" />
+        </li>
+        <li class="ui-state-default grid-item">
+          <img src="./images/row-2-col-2.jpg" alt="row-1-col-1" />
+        </li>
+        <li class="ui-state-default grid-item">
+          <img src="./images/row-3-col-2.jpg" alt="row-1-col-1" />
+        </li>
+        <li class="ui-state-default grid-item">
+          <img src="./images/row-1-col-3.jpg" alt="row-1-col-1" />
+        </li>
+        <li class="ui-state-default grid-item">
+          <img src="./images/row-2-col-3.jpg" alt="row-1-col-1" />
+        </li>
+        <li class="ui-state-default grid-item">
+          <img src="./images/row-3-col-3.jpg" alt="row-1-col-1" />
+        </li>
+      </ul>
     </div>
     <div class="position-absolute end-0 top-0 m-3" style="z-index: 100;">
       <p class="text-white fw-bold ">Final Output</p>
       <img src="./images/hope.png" alt="hope" style="width: 6rem;">
     </div>
-    <p class="text-white fw-bold position-absolute p-3 fs-1" style="z-index: 100;">Photo Puzzle</p>
+    <p class="text-white fw-bold position-absolute p-3 fs-1 ms-3 mt-3" style="z-index: 100;">Photo Puzzle</p>
     <div id="particles-js"></div>
     <script src="./pwa.js"></script>
-    <script src="./js/drag.js"></script>
+    <!-- <script src="./js/drag.js"></script> -->
     <script src="./js/particle.js"></script>
     <script src="./js/rgbHex.js"></script>
     <script src="./js/main.js"></script>

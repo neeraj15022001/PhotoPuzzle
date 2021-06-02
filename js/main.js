@@ -9,3 +9,7 @@ function drop(event) {
     var data = event.dataTransfer.getData("text")
     event.target.appendChild(document.getElementById(data))
 }
+$(function () {
+    $("#sortable").sortable();
+    $("#sortable").disableSelection();
+  });

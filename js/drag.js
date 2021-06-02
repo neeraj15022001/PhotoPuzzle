@@ -33,8 +33,10 @@ function getDragAfterElement(container, y) {
     const box = child.getBoundingClientRect()
     const offset = y - box.top - box.height / 2
     if (offset < 0 && offset > closest.offset) {
+      console.log(offset,child)
       return { offset: offset, element: child }
     } else {
+      console.log(closest)
       return closest
     }
   }, { offset: Number.NEGATIVE_INFINITY }).element
