@@ -23,3 +23,6 @@ body {
 img:hover {
   cursor: move;
 }
+.draggable.dragging {
+  opacity: .5;
+}
